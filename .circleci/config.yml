@@ -89,8 +89,9 @@ jobs:
           name: Scan backend - npm audit fix
           command: |
             cd backend
-            npm audit fix --audit-level=critical
             npm install
+            npm install standard-version@^7.0.0
+            npm audit fix --audit-level=critical
             npm audit --audit-level=critical
       
             
