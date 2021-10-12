@@ -86,21 +86,25 @@ jobs:
       - restore_cache:
           keys: [backend-build]
       - run:
-          name: Scan backend dependencies
+          name: Scan backend - npm audit fix
           command: |
             cd backend
             npm audit fix --audit-level=critical --force
+      - run:
+          name: Scan backend - npm audit
+          command: |
             npm audit --audit-level=critical
+      
             
 workflows:
   default:
     jobs:
       - build-frontend
       - build-backend
-      - test-frontend:
-          requires: [build-frontend]
-      - test-backend:
-          requires: [build-backend]
+#      - test-frontend:
+#          requires: [build-frontend]
+#      - test-backend:
+#          requires: [build-backend]
       - scan-backend:
           requires: [build-backend]
       - scan-frontend:
