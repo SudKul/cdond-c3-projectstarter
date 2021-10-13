@@ -1,0 +1,28 @@
+
+### [URL01]
+URL to the public GitHub repository. 
+https://github.com/SudKul/cdond-c3-projectstarter
+
+
+### [URL02]
+The public URL for your S3 Bucket (aka, your frontend). 
+http://udapeople-1af14f3.s3-website-us-east-1.amazonaws.com
+https://udapeople-1af14f3.s3.amazonaws.com/index.html
+
+
+### [URL03]
+The evidence of deployed and functioning front-end application in CloudFront 
+https://d33uom92y8trq4.cloudfront.net/
+
+
+### [URL04] 
+The evidence of a healthy backend application 
+(EC2 instance stops automatically)
+http://54.159.199.114:3030/api/status
+
+
+### Prometheus URL 
+(EC2 instance stops automatically)
+http://ec2-34-207-193-22.compute-1.amazonaws.com:9090
+
+
