@@ -415,7 +415,7 @@ jobs:
             echo OldWorkflowID: "${OldWorkflowID}"
             echo $OldWorkflowID
 
-            if [[ "${CIRCLE_WORKFLOW_ID:0:7}" ~= "${OldWorkflowID}" ]]
+            if [[ "${CIRCLE_WORKFLOW_ID:0:7}" =~ "${OldWorkflowID}" ]]
             then
               echo '-----------------------Cannot Cleanup --------------------------'
             else
